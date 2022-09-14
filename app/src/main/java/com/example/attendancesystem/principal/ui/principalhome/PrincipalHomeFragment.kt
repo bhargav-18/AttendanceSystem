@@ -314,44 +314,50 @@ class PrincipalHomeFragment : Fragment(R.layout.fragment_principal_home) {
         ) {
             requestLocationPermission()
         } else {
-            locationListener = LocationListener { location ->
-                val latitude = location.latitude
-                val longitude = location.longitude
-                val accuracy = location.accuracy
+            locationListener = object : LocationListener {
+                override fun onLocationChanged(location: Location) {
+                    val latitude = location.latitude
+                    val longitude = location.longitude
+                    val accuracy = location.accuracy
 
-                binding.tvLocation.text = "Latitude: $latitude \nLongitude: $longitude"
-                binding.tvAccuracy.text = "Accuracy: $accuracy"
+                    binding.tvLocation.text = "Latitude: $latitude \nLongitude: $longitude"
+                    binding.tvAccuracy.text = "Accuracy: $accuracy"
 
-                Log.d("TAG_LOCATION", "getLocation: $latitude")
+                    Log.d("TAG_LOCATION", "getLocation: $latitude")
 
-                val results = FloatArray(1)
+                    val results = FloatArray(1)
 
-                val schoolLatitude = sharedPreferences.getString(Constants.LATITUDE_KEY, "0")
-                val schoolLongitude = sharedPreferences.getString(Constants.LONGITUDE_KEY, "0")
+                    val schoolLatitude = sharedPreferences.getString(Constants.LATITUDE_KEY, "0")
+                    val schoolLongitude = sharedPreferences.getString(Constants.LONGITUDE_KEY, "0")
 
-                Location.distanceBetween(
-                    schoolLatitude!!.toDouble(),
-                    schoolLongitude!!.toDouble(),
-                    latitude,
-                    longitude,
-                    results
-                )
-                val distanceInMeters = results[0]
-                inCampus = distanceInMeters < Constants.ALLOWED_RADIUS
+                    Location.distanceBetween(
+                        schoolLatitude!!.toDouble(),
+                        schoolLongitude!!.toDouble(),
+                        latitude,
+                        longitude,
+                        results
+                    )
+                    val distanceInMeters = results[0]
+                    inCampus = distanceInMeters < Constants.ALLOWED_RADIUS
 
-                binding.apply {
-                    tvInCampus.text = if (inCampus) "In Campus" else "Outside campus"
-                    btnTakeEntryAttendance.isActivated = inCampus
-                    btnTakeEntryAttendance.alpha = if (inCampus) 1F else 0.5F
-                    btnTakeExitAttendance.isActivated = inCampus
-                    btnTakeExitAttendance.alpha = if (inCampus) 1F else 0.5F
-                    btnRegisterNewStudent.isEnabled = true
-                    btnTakeEntryAttendance.isEnabled = true
-                    btnTakeExitAttendance.isEnabled = true
-                    btnSignout.isEnabled = true
-                    btnStudentList.isEnabled = true
-                    btnGetSheet.isEnabled = true
+                    binding.apply {
+                        tvInCampus.text = if (inCampus) "In Campus" else "Outside campus"
+                        btnTakeEntryAttendance.isActivated = inCampus
+                        btnTakeEntryAttendance.alpha = if (inCampus) 1F else 0.5F
+                        btnTakeExitAttendance.isActivated = inCampus
+                        btnTakeExitAttendance.alpha = if (inCampus) 1F else 0.5F
+                        btnRegisterNewStudent.isEnabled = true
+                        btnTakeEntryAttendance.isEnabled = true
+                        btnTakeExitAttendance.isEnabled = true
+                        btnSignout.isEnabled = true
+                        btnStudentList.isEnabled = true
+                        btnGetSheet.isEnabled = true
+                    }
                 }
+
+                override fun onStatusChanged(provider: String, status: Int, extras: Bundle) {}
+                override fun onProviderEnabled(provider: String) {}
+                override fun onProviderDisabled(provider: String) {}
             }
 
             try {
