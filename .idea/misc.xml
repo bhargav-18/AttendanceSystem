@@ -3,10 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/om/AndroidStudioProjects/AttendanceSystem/app/src/main/res/drawable/circle.xml" value="0.1135" />
+        <entry key="..\:/Users/om/AndroidStudioProjects/AttendanceSystem/app/src/main/res/drawable/gradient_rectangle.xml" value="0.121" />
         <entry key="..\:/Users/om/AndroidStudioProjects/AttendanceSystem/app/src/main/res/drawable/ic_baseline_image_24.xml" value="0.113" />
         <entry key="..\:/Users/om/AndroidStudioProjects/AttendanceSystem/app/src/main/res/drawable/ic_baseline_perm_identity_24.xml" value="0.113" />
+        <entry key="..\:/Users/om/AndroidStudioProjects/AttendanceSystem/app/src/main/res/drawable/ic_outline_info_24.xml" value="0.121" />
         <entry key="..\:/Users/om/AndroidStudioProjects/AttendanceSystem/app/src/main/res/drawable/ic_round_person_24.xml" value="0.113" />
         <entry key="..\:/Users/om/AndroidStudioProjects/AttendanceSystem/app/src/main/res/drawable/primary_text_color_selector.xml" value="0.1135" />
+        <entry key="..\:/Users/om/AndroidStudioProjects/AttendanceSystem/app/src/main/res/drawable/round_corner.xml" value="0.121" />
         <entry key="..\:/Users/om/AndroidStudioProjects/AttendanceSystem/app/src/main/res/layout-v28/fragment_studet_home.xml" value="0.1796875" />
         <entry key="..\:/Users/om/AndroidStudioProjects/AttendanceSystem/app/src/main/res/layout/activity_abc.xml" value="0.165625" />
         <entry key="..\:/Users/om/AndroidStudioProjects/AttendanceSystem/app/src/main/res/layout/activity_auth.xml" value="0.1796875" />
@@ -25,7 +29,7 @@
         <entry key="..\:/Users/om/AndroidStudioProjects/AttendanceSystem/app/src/main/res/layout/fragment_launcher_screen.xml" value="0.17864583333333334" />
         <entry key="..\:/Users/om/AndroidStudioProjects/AttendanceSystem/app/src/main/res/layout/fragment_login.xml" value="0.17864583333333334" />
         <entry key="..\:/Users/om/AndroidStudioProjects/AttendanceSystem/app/src/main/res/layout/fragment_principal_home.xml" value="0.1796875" />
-        <entry key="..\:/Users/om/AndroidStudioProjects/AttendanceSystem/app/src/main/res/layout/fragment_principal_register.xml" value="0.1796875" />
+        <entry key="..\:/Users/om/AndroidStudioProjects/AttendanceSystem/app/src/main/res/layout/fragment_principal_register.xml" value="0.12569444444444444" />
         <entry key="..\:/Users/om/AndroidStudioProjects/AttendanceSystem/app/src/main/res/layout/fragment_student_list.xml" value="0.17864583333333334" />
         <entry key="..\:/Users/om/AndroidStudioProjects/AttendanceSystem/app/src/main/res/layout/fragment_student_register.xml" value="0.1796875" />
         <entry key="..\:/Users/om/AndroidStudioProjects/AttendanceSystem/app/src/main/res/layout/fragment_studet_home.xml" value="0.1796875" />
@@ -36,6 +40,7 @@
         <entry key="..\:/Users/om/AndroidStudioProjects/AttendanceSystem/app/src/main/res/layout/fragment_verify_user.xml" value="0.17864583333333334" />
         <entry key="..\:/Users/om/AndroidStudioProjects/AttendanceSystem/app/src/main/res/layout/item_list.xml" value="0.1675925925925926" />
         <entry key="..\:/Users/om/AndroidStudioProjects/AttendanceSystem/app/src/main/res/layout/item_student.xml" value="0.1796875" />
+        <entry key="..\:/Users/om/AndroidStudioProjects/AttendanceSystem/app/src/main/res/layout/test.xml" value="0.14563106796116504" />
       </map>
     </option>
   </component>

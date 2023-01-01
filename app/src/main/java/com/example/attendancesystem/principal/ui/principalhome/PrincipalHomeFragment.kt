@@ -143,6 +143,9 @@ class PrincipalHomeFragment : Fragment(R.layout.fragment_principal_home) {
     }
 
     private fun subscribeToObserve() {
+
+        viewModel.removeObservers()
+
         viewModel.userStatus.observe(viewLifecycleOwner, EventObserver(
             onError = { error ->
                 showProgress(

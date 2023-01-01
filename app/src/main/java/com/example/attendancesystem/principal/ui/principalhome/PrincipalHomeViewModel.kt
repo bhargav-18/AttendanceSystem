@@ -43,4 +43,9 @@ class PrincipalHomeViewModel @Inject constructor(
         }
 
     }
+
+    fun removeObservers() {
+        _userDetailStatus.value = null
+        _userDetailStatus.postValue(null)
+    }
 }

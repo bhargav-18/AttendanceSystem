@@ -31,7 +31,7 @@
     <string name="student_s_list">Student\'s list</string>
     <string name="enrolment_number">Enrolment Number</string>
     <string name="name">Name</string>
-    <string name="register_faculty">Register Faculty</string>
+    <string name="register_faculty">Add Faculty</string>
     <string name="faculty_list">Faculty List</string>
     <string name="get_data">Get Data</string>
     <string name="enter_your_phone_number">Enter your Phone Number</string>

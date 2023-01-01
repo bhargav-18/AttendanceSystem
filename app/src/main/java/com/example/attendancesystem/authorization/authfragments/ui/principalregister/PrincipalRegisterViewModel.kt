@@ -60,6 +60,8 @@ class PrincipalRegisterViewModel @Inject constructor(
             "emptyPhone"
         } else if (!Patterns.PHONE.matcher(phone).matches()) {
             "phone"
+        } else if (phone.length != 10) {
+            "wrongPhone"
         } else if (name.isEmpty()) {
             "name"
         } else if (enrolNo.isEmpty()) {

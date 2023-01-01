@@ -21,7 +21,7 @@ object Constants {
     const val LATITUDE_KEY = "latitude_key"
     const val LONGITUDE_KEY = "longitude_key"
 
-    //    const val CENTER_LATITUDE = 23.5213002336
+    //        const val CENTER_LATITUDE = 23.5213002336
 //    const val CENTER_LONGITUDE = 72.4519717336
 //    const val CENTER_LATITUDE = 23.006896
 //    const val CENTER_LONGITUDE = 72.519188

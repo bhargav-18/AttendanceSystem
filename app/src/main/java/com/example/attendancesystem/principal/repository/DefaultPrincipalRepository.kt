@@ -71,9 +71,9 @@ class DefaultPrincipalRepository : PrincipalRepository {
                         photoUri = profilePicUrl
                     }
                 )
+                val uid = mAuth2.currentUser!!.uid
                 mAuth2.signOut()
 //                try {
-                val uid = UUID.randomUUID().toString()
 //                    val imgID = UUID.randomUUID().toString()
 //                    imageUploadResult =
 //                        storage.getReference("students/${Constants.UNIVERSITY_NAME}/$enrolNo/$imgID")

@@ -188,6 +188,9 @@ class PrincipalRegisterFragment : Fragment(R.layout.fragment_principal_register)
                     "phone" -> {
                         binding.etFacultyPhone.error = "Enter a valid phone number"
                     }
+                    "wrongPhone" -> {
+                        binding.etFacultyPhone.error = "Enter a valid phone number"
+                    }
                     "name" -> {
                         binding.etFacultyName.error = "Name cannot be empty"
                     }
